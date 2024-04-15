@@ -1,0 +1,540 @@
+/* ----------reset---------- */
+/* 
+to do :
+add contact information
+add titled images of applications
+
+when one is presented with my first application
+then the application's image will be larger in size (hover effect?)
+
+when one clicks on the image of the application
+then the application is deployed and the user is taken to it
+
+Application deployed at live URL.
+* Application GitHub URL submitted.
+
+* GitHub repository contains application code.
+Repository contains quality readme with description, screenshot, link to deployed application.
+*/
+
+* {box-sizing: border-box}
+body, html, ul, li {margin: 0px;padding: 0px}
+h1, h2, h3, h4, h5, h6 {margin: 0em}
+ul {list-style-type: none}
+body {display:flex;flex-direction: column;}
+
+/* ----------header & navigation bar (START)---------- */
+
+h1 {font-family:cursive;
+    color:darkmagenta;
+    background-color:hotpink;
+    outline:3.5px dotted whitesmoke;
+    outline-offset:2px;
+    padding:0.2px 3px 9px 3px;
+    margin-bottom: 10px}
+
+header {background-color: rgb(0, 0, 0);
+        display:flex;  
+        justify-content:center;
+        align-items:center;
+        padding-top: 10px;
+        margin-bottom:0px;
+        margin-top: 0px;
+        flex-direction:column}
+
+/*nav bar*/
+
+.navbarRow ul {display:flex;
+               align-items:center;
+               min-width:300px;
+               list-style-type:none;
+               margin:0;
+               padding:2px;
+               overflow:hidden;
+               background-color:black}
+
+.navbarRow ul li {float:left;
+                  margin:10px;
+                  margin-left:10px;
+                  border:0.5px solid chartreuse}
+
+.navbarRow ul li a {display:block;
+                    text-align:center;
+                    padding:14px 16px;
+                    text-decoration:none;
+                    color:chartreuse;
+                    font-size: 120%}
+
+.navbarRow ul li a:active {color: firebrick}
+
+.navbarRow ul li a:focus {outline: none;
+                          font-size: 105%;
+                          background-color: #0b1104;
+                          padding:15.75px 17.75px}
+
+/*----------header & navigation bar (END)---------- */
+
+/*-------web developer text row (START)-------*/
+
+h2 {font-family:'Times New Roman', Times, serif;
+    color:hotpink;
+    background-color:mediumpurple}
+
+.jobtxtRow {display:flex;
+            align-items: flex-start}
+
+.jobtxtRow + h2 {padding-top: 3px;
+                 padding-bottom: 3px}
+
+/*----------work experience text row (START)----------*/
+   
+h3 {font-family:'Times New Roman', Times, serif;
+    color:chartreuse; 
+    background-color:black}
+
+.workexptxtRow + h3 {padding-top: 10px;
+                     padding-bottom: 10px}
+
+.workexptxtRow {display:flex;
+                align-items:flex-start}
+
+/*----------work experience text box (START)----------*/
+
+#workexpcntBox + h4 {font-family:'Times New Roman', Times, serif;
+                     color:black;
+                     background-color:hotpink}
+
+#workexpcntBox + .one {font-family:cursive;color:chartreuse;
+                       background-color: mediumpurple}
+
+#workexpcntBox {display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                background-color:hotpink}
+
+#workexpcntBox + section {background-color: darkmagenta}
+
+
+/*----------where i have been / future showcase work box (START)----------*/
+
+.whereihavebeentxtRow {display: flex;
+                       align-items: flex-start}
+
+.whereihavebeencntBox {display: flex;
+                       justify-content: center}
+
+.content {background-color: rgb(0, 0, 0)}
+
+.whereihavebeencntBox img {display:block;
+                           float: left;
+                           width: 200px;
+                           height: 200px;
+                           margin: 2px}
+/*----------about me section----------*/
+
+#aboutMe {background-color: hotpink}
+
+/*----------media queries (START)----------*/                         
+
+/* Tablets - header changes color */
+@media screen and (max-width: 62em) {
+    header {
+      background: #000000;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 48em) {
+    header {
+      background-color: #000000;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 36em) {
+    header {
+      background-color: #000000;
+    }
+  }
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------statements to come back to---------- */
+
+
+/*
+.navbarRow ul li a {
+    display:block;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    color:chartreuse;
+    font-size: 120%;
+   
+}
+.grid {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            display: grid;
+                            gap: 20px;
+                            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                          }
+                          
+.grid li {
+                            border: 1px solid #666;
+                            padding: 10px;
+                          }
+
+
+
+#a1:hover {
+    color: rgb(255, 128, 0);
+}
+#a2:hover {
+    color: rgb(238, 255, 0)
+}
+#a3:hover {
+    color: rgb(0, 255, 132)
+}
+#a4:hover {
+    color: rgb(0, 110, 255)
+}
+nav ul::before {
+    font-family: Impact;
+    content: '\273A';
+    color: hotpink;
+    margin-right: 5px;
+}
+nav ul::after {
+        font-family: Impact;
+        content: '\273A';
+        color: hotpink;
+        margin-left: 5px;
+}
+
+
+::before {
+    display:list-item
+}
+
+
+
+:is(#a1:hover):is(#a2,#a3,#a4){
+    color: hotpink;
+}
+
+
+a:not(:is(:hover)) {
+color: blue;
+}
+
+
+#a1,#a2,#a3,#a4::before {
+    display:list-item}
+#a1,#a2,#a3,#a4::before(:hover){
+    color: chartreuse
+
+
+    #a1,#a2,#a3,#a4::before(:hover){
+    color: chartreuse}
+
+#a1,#a2,#a3,#a4::after(:hover){
+        color: chartreuse }
+
+
+
+}
+
+#a1:hover {
+    color: cornflowerblue;
+}
+#a2:hover {
+    color: cornflowerblue;
+}
+#a3:hover {
+    color: cornflowerblue;
+}
+#a4:hover {
+    color: cornflowerblue;
+}
+#a1,#a2,#a3,#a4:where(:not(:hover)) {
+    color: deeppink;}
+
+
+
+.navbarRow ul li a:where(:not(:hover)) {
+    color: deeppink;}
+}
+
+:is(#a4:hover):is(#a2,#a3,#a4){
+    color: hotpink;}
+
+#a1:hover(#a2:not(.navbarRow ul li a::marker)) {
+    color: deeppink;}
+
+
+.navbarRow ul li a:hover {
+    color:aqua}
+    .navbarRow ul li a:where(#a3:not(#a1,#a2,#a4:hover)) {
+        color: deeppink;}
+.navbarRow ul li a:where(#a2:not(#a1,#a3,#a4:hover)) {
+            color: deeppink;}
+.navbarRow ul li a:where(#a1:not(#a2,#a3,#a4:hover)) {
+                color: deeppink;}
+
+#a1:hover(#a2:not(.navbarRow ul li a::marker)) {
+    color: deeppink;}
+        #a4:where(:not(:hover)) {
+
+.navbarRow ul li a:where(:is(#a4:hover)) {
+        color: hotpink;} 
+
+#a1:hover {
+            color: aquamarine;
+        }
+#a2:hover {
+            color: aquamarine
+        }
+#a3:hover {
+            color: aquamarine
+        }
+#a4:hover {
+            color: aquamarine
+        }
+
+.navbarRow ul li a:is(*:hover) {
+ color: brown;
+}
+.navbarRow ul li a:hover {
+    color:blueviolet
+
+    .navbarRow ul li:is(:hover) {
+    color: aqua;
+}
+.navbarRow ul li:not(:is(:hover)) {
+    color: rgb(226, 186, 43);
+}
+.navbarRow ul li a:hover {
+    color:blueviolet}
+
+.navbarRow ul li a:not(:is(:hover)) {
+    color: rgb(226, 186, 43);
+}
+.navbarRow ul li a:is(:hover) {
+        color: rgb(162, 0, 255); }
+
+
+}
+
+.navbarRow ul li a:active {
+    cursor: pointer;
+
+}
+}
+
+.navbarRow ul:hover {
+    color :aqua
+}
+*/
+
+
+/*
+#a2:hover {
+    color:aqua
+}
+#a3:hover {
+    color:aqua
+}
+#a4:hover {
+    color:aqua
+}
+
+
+
+
+
+
+position: absolute;  
+top:10px;
+right:10px;
+bottom:10px;
+left:10px;
+
+
+
+nav ul li a:active {
+    color: firebrick;
+}
+
+
+  position: absolute;
+    left: -1.75px;
+    right: -1.75px;
+
+
+h3 {font-family:'Times New Roman', Times, serif;
+    color:chartreuse; 
+    background-color:black}
+
+body {
+    display:flex;
+    flex-direction:column;
+    line-height:1.3
+}
+header {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:5%;
+    margin-bottom:0px;
+    flex-direction:column
+}
+
+nav ul {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-width:300px;
+    list-style-type:none;
+    margin:0;
+    padding:2px;
+    overflow:hidden;
+    background-color:black
+}
+nav ul li {
+    float:left;
+    margin:0px;
+    margin-left:10px
+}
+nav ul li a {
+    display:block;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none
+}
+h2 {margin:0px}
+h3 {margin:0px}
+main {
+    display:flex;
+    flex:1 1 0;
+    max-width:1200px;
+    margin:0% auto
+}
+section {flex:1 1 0;padding-right:5%}
+footer {
+    display:flex;
+    justify-content:center;
+    padding:2%
+}
+
+
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+  }
+/*
+.content {
+    display:inline-flexbox;
+    flex-direction: row;
+    justify-content: center;
+    max-width:1200px;
+    margin:0% auto}
+//
+.card {
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
+      }
+      
+.card header {
+        padding: 20px;
+        background: #13293d;
+        color: #fff;
+      }
+      
+.card img {
+        width: 100%;
+      }
+/*//*/
+
+header {background-color:black}
+h1 {font-family:cursive;
+    color:darkmagenta;
+    background-color:hotpink;
+    outline:3.5px dotted whitesmoke;
+    outline-offset:2px}
+nav ul li {border:0.5px solid chartreuse}
+nav ul li a {color:chartreuse}
+section {background-color:hotpink}
+h2 {font-family:'Times New Roman', Times, serif;
+    color:hotpink;
+    background-color:mediumpurple}
+h3 {font-family:'Times New Roman', Times, serif;
+    color:chartreuse; 
+    background-color:black}
+h4 {font-family:'Times New Roman', Times, serif;
+    color:black;
+    background-color:hotpink}
+.one {font-family:cursive;
+    color:chartreuse;
+    background-color:mediumpurple}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+*/
