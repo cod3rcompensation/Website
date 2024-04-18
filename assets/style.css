@@ -1,7 +1,7 @@
 /* ----------reset---------- */
 /* 
 to do :
-add contact information
+
 add titled images of applications
 
 when one is presented with my first application
@@ -10,11 +10,21 @@ then the application's image will be larger in size (hover effect?)
 when one clicks on the image of the application
 then the application is deployed and the user is taken to it
 
-Application deployed at live URL.
-* Application GitHub URL submitted.
+deploy application at a live URL
 
-* GitHub repository contains application code.
-Repository contains quality readme with description, screenshot, link to deployed application.
+---------------------------------------------------------------------------
+You are required to submit BOTH of the following for review:
+
+Repository contains quality readme with description, screenshot, link to deployed application
+
+Application GitHub URL submitted
+
+GitHub repository contains application code
+
+The URL of the deployed application
+
+The URL of the GitHub repository
+
 */
 
 * {box-sizing: border-box}
@@ -23,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0em}
 ul {list-style-type: none}
 body {display:flex;flex-direction: column;}
 
-/* ----------header & navigation bar (START)---------- */
+/* ----------header & navigation bar(⌄⌄START⌄⌄)---------- */
 
 h1 {font-family:cursive;
     color:darkmagenta;
@@ -68,13 +78,14 @@ header {background-color: rgb(0, 0, 0);
 .navbarRow ul li a:active {color: firebrick}
 
 .navbarRow ul li a:focus {outline: none;
+                          margin: 0px;
                           font-size: 105%;
                           background-color: #0b1104;
                           padding:15.75px 17.75px}
 
 /*----------header & navigation bar (END)---------- */
 
-/*-------web developer text row (START)-------*/
+/*-------web developer text row(⌄⌄START⌄⌄)-------*/
 
 h2 {font-family:'Times New Roman', Times, serif;
     color:hotpink;
@@ -86,7 +97,7 @@ h2 {font-family:'Times New Roman', Times, serif;
 .jobtxtRow + h2 {padding-top: 3px;
                  padding-bottom: 3px}
 
-/*----------work experience text row (START)----------*/
+/*----------work experience text row(⌄⌄START⌄⌄)----------*/
    
 h3 {font-family:'Times New Roman', Times, serif;
     color:chartreuse; 
@@ -98,7 +109,7 @@ h3 {font-family:'Times New Roman', Times, serif;
 .workexptxtRow {display:flex;
                 align-items:flex-start}
 
-/*----------work experience text box (START)----------*/
+/*----------work experience text box(⌄⌄START⌄⌄)----------*/
 
 #workexpcntBox + h4 {font-family:'Times New Roman', Times, serif;
                      color:black;
@@ -115,43 +126,163 @@ h3 {font-family:'Times New Roman', Times, serif;
 
 #workexpcntBox + section {background-color: darkmagenta}
 
-
-/*----------where i have been / future showcase work box (START)----------*/
+/*----------where i have been / future showcase work box(⌄⌄START⌄⌄)----------*/
 
 .whereihavebeentxtRow {display: flex;
                        align-items: flex-start}
 
-.whereihavebeencntBox {display: flex;
-                       justify-content: center}
+.content {background-color: rgb(0, 0, 0);
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center}
 
-.content {background-color: rgb(0, 0, 0)}
+.pp {background-color: chartreuse;}
 
-.whereihavebeencntBox img {display:block;
-                           float: left;
-                           width: 200px;
-                           height: 200px;
-                           margin: 2px}
-/*----------about me section----------*/
+#first1image:hover {outline: none;
+    margin: 0px;
+    font-size: 105%;
+    background-color: #ff0000;
+    padding:15.75px 17.75px}
 
-#aboutMe {background-color: hotpink}
+#first1image {display:flexbox; text-align: center;}
 
-/*----------media queries (START)----------*/                         
+#second2image {display:flexbox;
+               text-align: center;}
+
+#third3image {display:flexbox;
+              text-align: center}
+
+/*----------about me section(⌄⌄START⌄⌄)----------*/
+
+#aboutMe + h4 {font-family:'Times New Roman', Times, serif;
+                color:black;
+                background-color:hotpink;
+                margin: 0em;
+                margin-block-end: 1.33em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+                unicode-bidi: isolate}
+
+#aboutMe + p {font-family:cursive;color:chartreuse;
+              background-color: mediumpurple;
+              margin-block-start: 1.33em;
+              margin-block-end: 1.33em;
+              margin-inline-start: 0px;
+              margin-inline-end: 0px;
+              unicode-bidi: isolate}
+
+#aboutMe + section {background-color: darkmagenta}
+
+#css-tooltip {position: relative;
+              text-decoration:underline;
+              color: #000;
+              cursor: pointer}
+
+#css-tooltip:hover::after {position: absolute;
+                 content:"This Is The About Me Section";
+                 left: 10px;
+                 bottom: 35px;
+                 min-width: 200px;
+                 font-family:cursive;
+                 color:darkmagenta;
+                 background-color:hotpink;
+                 outline:3.5px dotted whitesmoke;
+                 outline-offset:2px;
+                 padding: 12px;
+                 font-size: 80%;
+                 z-index: 1}
+
+
+
+/*----------aside email(⌄⌄START⌄⌄)----------*/
+
+aside {background-color: rgb(0, 0, 0);
+        display:flex;  
+        justify-content:center;
+        align-items:center;
+        margin-bottom:0px;
+        margin-top: 0px;
+        flex-direction:column;
+        padding-bottom: 5px;}
+  
+aside h5 {font-size: 150%;
+color: darkmagenta;
+padding-bottom: 10px;
+padding-top: 10px;}
+  
+input,button {width: 100%;
+              margin: 2% 0;
+              padding: 0%;
+              line-height: 100%;
+              height:100%;
+              text-align: center;
+              vertical-align: middle}
+
+input{ border:0.5px solid chartreuse;
+    font-size: 100%; background-color: #0b1104;
+    font-family: 'Times New Roman', Times, serif; color: whitesmoke; padding: 0%;
+    display:flex; justify-content: center;}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: chartreuse;
+    border: px chartreuse;
+    -moz-box-shadow: 0 0 5px chartreuse;
+    -webkit-box-shadow: 0 0 5px chartreuse
+}
+
+    
+input:focus, textarea:focus, select:focus {
+outline-offset: 5px;
+outline: 10px chartreuse;}
+    
+input::placeholder {color: chartreuse;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 75%;
+opacity: 20%;;
+vertical-align: middle}
+
+button {color:chartreuse;
+background-color:  #0b1104;
+border: 0.5px solid chartreuse}
+
+/*----------footer(⌄⌄START⌄⌄)----------*/
+
+.footer {background-color:rgb(0, 0, 0);
+         display: flex;
+         justify-content: center;
+         padding: 2%;
+         color:chartreuse}
+
+#footertxt { 
+    text-align:center;
+    padding:1px 8px 4px 8px;
+    border:0.5px solid chartreuse;
+    font-size: 120%}
+    
+    
+    
+
+/*----------media queries(⌄⌄START⌄⌄)----------*/                         
 
 /* Tablets - header changes color */
+
+
 @media screen and (max-width: 62em) {
     header {
       background: #000000;
     }
   }
   
-  /* Large smartphones - navbar changes color */
+/* Large smartphones - navbar changes color */
   @media screen and (max-width: 48em) {
     header {
       background-color: #000000;
     }
   }
   
-  /* Small smartphones - image placeholders change color */
+/* Small smartphones - image placeholders change color */
   @media screen and (max-width: 36em) {
     header {
       background-color: #000000;
@@ -163,7 +294,7 @@ h3 {font-family:'Times New Roman', Times, serif;
 
 
 
-
+ 
 
 
 
